@@ -1,0 +1,202 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\main.c	/^int main() {$/;"	function	line:4
+foo	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\map.c	/^int foo;$/;"	variable	line:5
+recur	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\map.c	/^int recur(int i) {$/;"	function	line:8	signature:(int i)
+stuff	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\map.c	/^int stuff = 7;$/;"	variable	line:23
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\map.c	/^int main(int argc, char *argv[]) {$/;"	function	line:25	signature:(int argc, char *argv[])
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw0\wc.c	/^int main(int argc, char *argv[]) {$/;"	function	line:1	signature:(int argc, char *argv[])
+unused	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^#define unused /;"	macro	line:16	file:
+shell_is_interactive	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^bool shell_is_interactive;$/;"	variable	line:19
+shell_terminal	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^int shell_terminal;$/;"	variable	line:22
+shell_tmodes	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^struct termios shell_tmodes;$/;"	variable	line:25	typeref:struct:termios
+shell_pgid	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^pid_t shell_pgid;$/;"	variable	line:28
+cmd_fun_t	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^typedef int cmd_fun_t(struct tokens *tokens);$/;"	typedef	line:34	file:
+fun_desc	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^typedef struct fun_desc {$/;"	struct	line:37	file:
+fun	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^  cmd_fun_t *fun;$/;"	member	line:38	struct:fun_desc	file:
+cmd	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^  char *cmd;$/;"	member	line:39	struct:fun_desc	file:
+doc	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^  char *doc;$/;"	member	line:40	struct:fun_desc	file:
+fun_desc_t	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^} fun_desc_t;$/;"	typedef	line:41	typeref:struct:fun_desc	file:
+cmd_table	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^fun_desc_t cmd_table[] = {$/;"	variable	line:43
+cmd_help	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^int cmd_help(unused struct tokens *tokens) {$/;"	function	line:49	signature:(unused struct tokens *tokens)
+cmd_exit	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^int cmd_exit(unused struct tokens *tokens) {$/;"	function	line:56	signature:(unused struct tokens *tokens)
+lookup	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^int lookup(char cmd[]) {$/;"	function	line:61	signature:(char cmd[])
+init_shell	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^void init_shell() {$/;"	function	line:69
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\shell.c	/^int main(unused int argc, unused char *argv[]) {$/;"	function	line:94	signature:(unused int argc, unused char *argv[])
+tokens	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^struct tokens {$/;"	struct	line:6	file:
+tokens_length	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^  size_t tokens_length;$/;"	member	line:7	struct:tokens	file:
+tokens	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^  char **tokens;$/;"	member	line:8	struct:tokens	file:
+buffers_length	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^  size_t buffers_length;$/;"	member	line:9	struct:tokens	file:
+buffers	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^  char **buffers;$/;"	member	line:10	struct:tokens	file:
+vector_push	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^static void *vector_push(char ***pointer, size_t *size, void *elem) {$/;"	function	line:13	file:	signature:(char ***pointer, size_t *size, void *elem)
+copy_word	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^static void *copy_word(char *source, size_t n) {$/;"	function	line:20	file:	signature:(char *source, size_t n)
+tokenize	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^struct tokens *tokenize(const char *line) {$/;"	function	line:27	signature:(const char *line)
+tokens_get_length	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^size_t tokens_get_length(struct tokens *tokens) {$/;"	function	line:100	signature:(struct tokens *tokens)
+tokens_get_token	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^char *tokens_get_token(struct tokens *tokens, size_t n) {$/;"	function	line:108	signature:(struct tokens *tokens, size_t n)
+tokens_destroy	D:\OneDrive - HKUST Connect\others\git\cs162\hw1\tokenizer.c	/^void tokens_destroy(struct tokens *tokens) {$/;"	function	line:116	signature:(struct tokens *tokens)
+html	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^<html>$/;"	function	line:2
+head	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^<head>$/;"	function	line:3
+meta	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <meta charset="UTF-8" \/>$/;"	function	line:4
+title	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <title>CS 162 is the best<\/title>$/;"	function	line:5
+style	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <style type="text\/css">$/;"	function	line:6
+body	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^<body>$/;"	function	line:121
+marquee	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <marquee scrollamount="30">$/;"	function	line:122
+span	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^        <span class="rainbow">CS 162 IS THE BEST<\/span>$/;"	function	line:123
+h	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <h1 class="site-title flashing">WELCOME TO MY WEBSITE<\/h1>$/;"	function	line:125
+nav	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <nav class="site-navigation">$/;"	function	line:126
+a	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^        <a href="">HOME<\/a>$/;"	function	line:127
+a	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^        <a href="my_documents\/">SEE MY FILES<\/a>$/;"	function	line:128
+div	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <div class="site-content var-pink">$/;"	function	line:130
+p	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^        <p class="site-icon rotating">CS162<\/p>$/;"	function	line:131
+footer	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^    <footer class="site-content var-orange">$/;"	function	line:133
+p	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\files\index.html	/^        <p>Created with WEB 4.0 HTML6 CLOUD.<\/p>$/;"	function	line:134
+work_queue	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^wq_t work_queue;$/;"	variable	line:27
+num_threads	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^int num_threads;$/;"	variable	line:28
+server_port	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^int server_port;$/;"	variable	line:29
+server_files_directory	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^char *server_files_directory;$/;"	variable	line:30
+server_proxy_hostname	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^char *server_proxy_hostname;$/;"	variable	line:31
+server_proxy_port	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^int server_proxy_port;$/;"	variable	line:32
+handle_files_request	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void handle_files_request(int fd) {$/;"	function	line:46	signature:(int fd)
+handle_proxy_request	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void handle_proxy_request(int fd) {$/;"	function	line:78	signature:(int fd)
+init_thread_pool	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void init_thread_pool(int num_threads, void (*request_handler)(int)) {$/;"	function	line:127	signature:(int num_threads, void (*request_handler)(int))
+serve_forever	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void serve_forever(int *socket_number, void (*request_handler)(int)) {$/;"	function	line:138	signature:(int *socket_number, void (*request_handler)(int))
+server_fd	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^int server_fd;$/;"	variable	line:203
+signal_callback_handler	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void signal_callback_handler(int signum) {$/;"	function	line:204	signature:(int signum)
+USAGE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^char *USAGE =$/;"	variable	line:211
+exit_with_usage	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^void exit_with_usage() {$/;"	function	line:215
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\httpserver.c	/^int main(int argc, char **argv) {$/;"	function	line:220	signature:(int argc, char **argv)
+LIBHTTP_REQUEST_MAX_SIZE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^#define LIBHTTP_REQUEST_MAX_SIZE /;"	macro	line:9	file:
+http_fatal_error	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_fatal_error(char *message) {$/;"	function	line:11	signature:(char *message)
+http_request_parse	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^struct http_request *http_request_parse(int fd) {$/;"	function	line:16	signature:(int fd)
+http_get_response_message	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^char* http_get_response_message(int status_code) {$/;"	function	line:70	signature:(int status_code)
+http_start_response	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_start_response(int fd, int status_code) {$/;"	function	line:97	signature:(int fd, int status_code)
+http_send_header	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_send_header(int fd, char *key, char *value) {$/;"	function	line:102	signature:(int fd, char *key, char *value)
+http_end_headers	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_end_headers(int fd) {$/;"	function	line:106	signature:(int fd)
+http_send_string	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_send_string(int fd, char *data) {$/;"	function	line:110	signature:(int fd, char *data)
+http_send_data	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^void http_send_data(int fd, char *data, size_t size) {$/;"	function	line:114	signature:(int fd, char *data, size_t size)
+http_get_mime_type	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.c	/^char *http_get_mime_type(char *file_name) {$/;"	function	line:125	signature:(char *file_name)
+LIBHTTP_H	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.h	/^#define LIBHTTP_H$/;"	macro	line:21
+http_request	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.h	/^struct http_request {$/;"	struct	line:26
+method	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.h	/^  char *method;$/;"	member	line:27	struct:http_request
+path	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\libhttp.h	/^  char *path;$/;"	member	line:28	struct:http_request
+UTLIST_H	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define UTLIST_H$/;"	macro	line:25
+UTLIST_VERSION	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define UTLIST_VERSION /;"	macro	line:27
+LDECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LDECLTYPE(/;"	macro	line:68
+NO_DECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define NO_DECLTYPE$/;"	macro	line:70
+LDECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LDECLTYPE(/;"	macro	line:71
+NO_DECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define NO_DECLTYPE$/;"	macro	line:74
+LDECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LDECLTYPE(/;"	macro	line:75
+LDECLTYPE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LDECLTYPE(/;"	macro	line:77
+_SV	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _SV(/;"	macro	line:84
+_NEXT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _NEXT(/;"	macro	line:90
+_NEXTASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _NEXTASGN(/;"	macro	line:91
+_PREVASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _PREVASGN(/;"	macro	line:97
+_RS	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _RS(/;"	macro	line:102
+_CASTASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _CASTASGN(/;"	macro	line:107
+_SV	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _SV(/;"	macro	line:113
+_NEXT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _NEXT(/;"	macro	line:114
+_NEXTASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _NEXTASGN(/;"	macro	line:115
+_PREVASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _PREVASGN(/;"	macro	line:117
+_RS	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _RS(/;"	macro	line:118
+_CASTASGN	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define _CASTASGN(/;"	macro	line:119
+LL_SORT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SORT(/;"	macro	line:126
+LL_SORT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SORT2(/;"	macro	line:128
+DL_SORT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SORT(/;"	macro	line:206
+DL_SORT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SORT2(/;"	macro	line:208
+CDL_SORT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SORT(/;"	macro	line:288
+CDL_SORT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SORT2(/;"	macro	line:290
+LL_PREPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_PREPEND(/;"	macro	line:393
+LL_PREPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_PREPEND2(/;"	macro	line:395
+LL_CONCAT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_CONCAT(/;"	macro	line:401
+LL_CONCAT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_CONCAT2(/;"	macro	line:403
+LL_APPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND(/;"	macro	line:417
+LL_APPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND2(/;"	macro	line:419
+LL_DELETE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE(/;"	macro	line:434
+LL_DELETE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE2(/;"	macro	line:436
+LL_APPEND_VS2008	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND_VS2008(/;"	macro	line:453
+LL_APPEND2_VS2008	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND2_VS2008(/;"	macro	line:455
+LL_DELETE_VS2008	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE_VS2008(/;"	macro	line:469
+LL_DELETE2_VS2008	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE2_VS2008(/;"	macro	line:471
+LL_APPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef LL_APPEND$/;"	macro	line:490
+LL_APPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND /;"	macro	line:491
+LL_DELETE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef LL_DELETE$/;"	macro	line:492
+LL_DELETE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE /;"	macro	line:493
+LL_DELETE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef LL_DELETE2$/;"	macro	line:494
+LL_DELETE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_DELETE2 /;"	macro	line:495
+LL_APPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef LL_APPEND2$/;"	macro	line:496
+LL_APPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_APPEND2 /;"	macro	line:497
+LL_CONCAT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef LL_CONCAT /;"	macro	line:498
+DL_CONCAT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#undef DL_CONCAT /;"	macro	line:499
+LL_COUNT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_COUNT(/;"	macro	line:503
+LL_COUNT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_COUNT2(/;"	macro	line:505
+LL_FOREACH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_FOREACH(/;"	macro	line:511
+LL_FOREACH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_FOREACH2(/;"	macro	line:513
+LL_FOREACH_SAFE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_FOREACH_SAFE(/;"	macro	line:515
+LL_FOREACH_SAFE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_FOREACH_SAFE2(/;"	macro	line:517
+LL_SEARCH_SCALAR	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SEARCH_SCALAR(/;"	macro	line:520
+LL_SEARCH_SCALAR2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SEARCH_SCALAR2(/;"	macro	line:522
+LL_SEARCH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SEARCH(/;"	macro	line:530
+LL_SEARCH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_SEARCH2(/;"	macro	line:532
+LL_REPLACE_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_REPLACE_ELEM(/;"	macro	line:540
+LL_PREPEND_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define LL_PREPEND_ELEM(/;"	macro	line:560
+DL_PREPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_PREPEND(/;"	macro	line:583
+DL_PREPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_PREPEND2(/;"	macro	line:585
+DL_APPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_APPEND(/;"	macro	line:597
+DL_APPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_APPEND2(/;"	macro	line:599
+DL_CONCAT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_CONCAT(/;"	macro	line:613
+DL_CONCAT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_CONCAT2(/;"	macro	line:615
+DL_DELETE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_DELETE(/;"	macro	line:630
+DL_DELETE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_DELETE2(/;"	macro	line:632
+DL_COUNT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_COUNT(/;"	macro	line:650
+DL_COUNT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_COUNT2(/;"	macro	line:652
+DL_FOREACH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_FOREACH(/;"	macro	line:658
+DL_FOREACH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_FOREACH2(/;"	macro	line:660
+DL_FOREACH_SAFE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_FOREACH_SAFE(/;"	macro	line:663
+DL_FOREACH_SAFE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_FOREACH_SAFE2(/;"	macro	line:665
+DL_SEARCH_SCALAR	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SEARCH_SCALAR /;"	macro	line:669
+DL_SEARCH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SEARCH /;"	macro	line:670
+DL_SEARCH_SCALAR2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SEARCH_SCALAR2 /;"	macro	line:671
+DL_SEARCH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_SEARCH2 /;"	macro	line:672
+DL_REPLACE_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_REPLACE_ELEM(/;"	macro	line:674
+DL_PREPEND_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define DL_PREPEND_ELEM(/;"	macro	line:700
+CDL_PREPEND	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_PREPEND(/;"	macro	line:718
+CDL_PREPEND2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_PREPEND2(/;"	macro	line:720
+CDL_DELETE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_DELETE(/;"	macro	line:734
+CDL_DELETE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_DELETE2(/;"	macro	line:736
+CDL_COUNT	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_COUNT(/;"	macro	line:748
+CDL_COUNT2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_COUNT2(/;"	macro	line:750
+CDL_FOREACH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_FOREACH(/;"	macro	line:756
+CDL_FOREACH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_FOREACH2(/;"	macro	line:758
+CDL_FOREACH_SAFE	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_FOREACH_SAFE(/;"	macro	line:761
+CDL_FOREACH_SAFE2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_FOREACH_SAFE2(/;"	macro	line:763
+CDL_SEARCH_SCALAR	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SEARCH_SCALAR(/;"	macro	line:767
+CDL_SEARCH_SCALAR2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SEARCH_SCALAR2(/;"	macro	line:769
+CDL_SEARCH	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SEARCH(/;"	macro	line:777
+CDL_SEARCH2	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_SEARCH2(/;"	macro	line:779
+CDL_REPLACE_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_REPLACE_ELEM(/;"	macro	line:787
+CDL_PREPEND_ELEM	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\utlist.h	/^#define CDL_PREPEND_ELEM(/;"	macro	line:807
+wq_init	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.c	/^void wq_init(wq_t *wq) {$/;"	function	line:6	signature:(wq_t *wq)
+wq_pop	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.c	/^int wq_pop(wq_t *wq) {$/;"	function	line:16	signature:(wq_t *wq)
+wq_push	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.c	/^void wq_push(wq_t *wq, int client_socket_fd) {$/;"	function	line:30	signature:(wq_t *wq, int client_socket_fd)
+__WQ__	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^#define __WQ__$/;"	macro	line:2
+wq_item	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^typedef struct wq_item {$/;"	struct	line:9
+client_socket_fd	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^  int client_socket_fd; \/\/ Client socket to be served.$/;"	member	line:10	struct:wq_item
+next	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^  struct wq_item *next;$/;"	member	line:11	struct:wq_item	typeref:struct:wq_item::wq_item
+prev	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^  struct wq_item *prev;$/;"	member	line:12	struct:wq_item	typeref:struct:wq_item::wq_item
+wq_item_t	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^} wq_item_t;$/;"	typedef	line:13	typeref:struct:wq_item
+wq	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^typedef struct wq {$/;"	struct	line:15
+size	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^  int size;$/;"	member	line:16	struct:wq
+head	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^  wq_item_t *head;$/;"	member	line:17	struct:wq
+wq_t	D:\OneDrive - HKUST Connect\others\git\cs162\hw2\wq.h	/^} wq_t;$/;"	typedef	line:19	typeref:struct:wq
+mm_malloc	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_alloc.c	/^void *mm_malloc(size_t size) {$/;"	function	line:10	signature:(size_t size)
+mm_realloc	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_alloc.c	/^void *mm_realloc(void *ptr, size_t size) {$/;"	function	line:15	signature:(void *ptr, size_t size)
+mm_free	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_alloc.c	/^void mm_free(void *ptr) {$/;"	function	line:20	signature:(void *ptr)
+mm_malloc	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_test.c	/^void* (*mm_malloc)(size_t);$/;"	variable	line:7
+mm_realloc	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_test.c	/^void* (*mm_realloc)(void*, size_t);$/;"	variable	line:8
+mm_free	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_test.c	/^void (*mm_free)(void*);$/;"	variable	line:9
+load_alloc_functions	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_test.c	/^void load_alloc_functions() {$/;"	function	line:11
+main	D:\OneDrive - HKUST Connect\others\git\cs162\hw3\mm_test.c	/^int main() {$/;"	function	line:38

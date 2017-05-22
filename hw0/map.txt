@@ -1,0 +1,13 @@
+defined: _main, recur, static data,
+undefined:  i, j, malloc data,
+global data can be defined beforehead, and only have one instance.
+while local veriables cannot be defined, they are allocated dynamically.
+
+stack is going downward
+
+stack is above the program segment
+heap is under the program segment
+
+the stack frame is 0x40
+
+not contiguous for malloced data;

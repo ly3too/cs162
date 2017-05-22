@@ -15,6 +15,9 @@ enum {
 	NUM_WCS     = 5,
 };
 
+static void do_help();
+static void do_version();
+
 int main (int argc, char **argv)
 {
   int c;
@@ -58,9 +61,11 @@ int main (int argc, char **argv)
         {
         case 0:
           /* If this option set a flag, do nothing else now. */
-          if (long_options[option_index].flag != 0)
-            break;
-          printf ("option %s", long_options[option_index].name);
+          if (option_index == 6) // helpe
+						do_help();
+          if (option_index == 7)
+						do_version();
+					ok = 0;
           break;
 
         case 'c':
@@ -210,7 +215,37 @@ int main (int argc, char **argv)
     }
 
 
-  }
+  } // if(ok)
 
   exit (0);
+}
+
+
+static void do_help()
+{
+	puts(
+"用法：wc [选项]... [文件]... \n "
+"或：wc [选项]... --files0-from=F \n"
+"Print newline, word, and byte counts for each FILE, and a total line if"
+"more than one FILE is specified.  A word is a non-zero-length sequence of"
+"characters delimited by white space.\n\n"
+"if no file name specified or file name is \"-\" input from stdin\n\n"
+"The options below may be used to select which counts are printed, always in"
+"the following order: newline, word, character, byte, maximum line length.\n"
+"  -c, --bytes            print the byte counts\n"
+"  -m, --chars            print the character counts\n"
+"  -l, --lines            print the newline counts\n"
+"      --files0-from=F    read input from the files specified by\n"
+"                           NUL-terminated names in file F;\n"
+"                           If F is - then read names from standard input\n"
+"  -L, --max-line-length  print the maximum display width\n"
+"  -w, --words            print the word counts\n"
+"      --help            显示此帮助信息并退出 \n"
+"      --version         显示版本信息并退出"
+	);
+}
+
+static void do_version()
+{
+	puts("my wc, version 1.0");
 }

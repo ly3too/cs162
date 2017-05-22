@@ -1,0 +1,68 @@
+Undefined command: "".  Try "help".
+$7 = 2
+argc > gdb.txt"finish" not meaningful in the outermost frame.
+Program not restarted.
+Undefined command: "cotinue".  Try "help".
+Continuing.
+
+Breakpoint 2, main (argc=2, argv=0xffffcc10) at wc.c:32
+32	  while (ok)
+Undefined set breakpoint command: "main".  Try "help set breakpoint".
+Undefined command: "breakpoint".  Try "help".
+Breakpoint 1 at 0x1004010f7: file wc.c, line 24.
+Starting program: /home/yliucs/githome/cs162/hw0/wc.exe wc.c
+[New Thread 3872.0x2ba0]
+[New Thread 3872.0x2a40]
+[New Thread 3872.0x1694]
+[New Thread 3872.0x27c4]
+[New Thread 3872.0x28b0]
+[New Thread 3872.0x1f3c]
+
+Breakpoint 1, main (argc=2, argv=0xffffcc10) at wc.c:24
+24	  int idx = 0;
+$1 = 0x60004b2b0 "/home/yliucs/githome/cs162/hw0/wc"
+$2 = 0xffffcc61 "wc.c"
+$3 = (char **) 0xffffcc10
+#0  main (argc=2, argv=0xffffcc10) at wc.c:24
+Stack level 0, frame at 0xffffcbd0:
+ rip = 0x1004010f7 in main (wc.c:24); saved rip = 0x180047812
+ source language c.
+ Arglist at 0xffffcbc0, args: argc=2, argv=0xffffcc10
+ Locals at 0xffffcbc0, Previous frame's sp is 0xffffcbd0
+ Saved registers:
+  rbp at 0xffffcbc0, rip at 0xffffcbc8, xmm15 at 0xffffcbc8
+rax            0x0	0
+rbx            0xffffcc10	4294954000
+rcx            0x1	1
+rdx            0x0	0
+rsi            0x60004b250	25770111568
+rdi            0x80808000	2155905024
+rbp            0xffffcbc0	0xffffcbc0
+rsp            0xffffcae0	0xffffcae0
+r8             0x0	0
+r9             0x0	0
+r10            0xffffc9a0	4294953376
+r11            0x180045ef5	6442737397
+r12            0xffffcc65	4294954085
+r13            0x1	1
+r14            0xffffcc65	4294954085
+r15            0x77	119
+rip            0x1004010f7	0x1004010f7 <main+23>
+eflags         0x202	[ IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x2b	43
+es             0x2b	43
+fs             0x53	83
+gs             0x2b	43
+"finish" not meaningful in the outermost frame.
+Continuing.
+[New Thread 3872.0x1cd0]
+[New Thread 3872.0x2458]
+[Thread 3872.0x27c4 exited with code 0]
+[Thread 3872.0x28b0 exited with code 0]
+[Thread 3872.0x1f3c exited with code 0]
+[Thread 3872.0x2a40 exited with code 0]
+[Thread 3872.0x1694 exited with code 0]
+[Thread 3872.0x2458 exited with code 0]
+[Inferior 1 (process 3872) exited normally]

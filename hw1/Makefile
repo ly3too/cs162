@@ -10,9 +10,11 @@ OBJS=$(SRCS:.c=.o)
 all: $(EXECUTABLES)
 
 $(EXECUTABLES): $(OBJS)
+	echo $@ $^
 	$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) -o $@
 
 .c.o:
+	echo Objects = $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

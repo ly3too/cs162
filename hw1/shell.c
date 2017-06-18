@@ -105,15 +105,64 @@ int main(unused int argc, unused char *argv[]) {
     /* Split our line into words. */
     struct tokens *tokens = tokenize(line);
 
-    /* Find which built-in function to run. */
-    int fundex = lookup(tokens_get_token(tokens, 0));
-
-    if (fundex >= 0) {
-      cmd_table[fundex].fun(tokens);
-    } else {
-      /* REPLACE this to run commands as programs. */
-      fprintf(stdout, "This shell doesn't know how to run programs.\n");
+    //print out tolkens
+    /*size_t i;
+    for (i=0; i < tokens_get_length(tokens); i++) {
+        fprintf(stdout, "%s\t", tokens_get_token(tokens, i));
     }
+    if (i>0)
+        fprintf(stdout, "\n");
+    */
+
+    if (tokens_get_length(tokens) > 0) {
+        /* Find which built-in function to run. */
+        int fundex = lookup(tokens_get_token(tokens, 0));
+
+        if (fundex >= 0) {
+          cmd_table[fundex].fun(tokens);
+        } else {
+
+          /* REPLACE this to run commands as programs. */
+          pid_t pid;
+          int status;
+
+          pid = fork();
+          if (pid < 0) {
+            fprintf(stderr, "fork error.\n");
+            exit(-1);
+            }
+
+            // exec a program
+          if (pid == 0){
+              const int token_length = tokens_get_length(tokens);
+              char ** argv = (char ** ) malloc(sizeof(char *) * token_length);
+
+              argv[token_length] = NULL;
+              for (int i=1; i<token_length; i++) {
+                  argv[i-1] = tokens_get_token(tokens, i);
+              }
+
+              //running program
+              fprintf(stdout, "runing program: %s, with argv: ", tokens_get_token(tokens, 0));
+              for (int i=0; i<token_length-1; i++) {
+                  fprintf(stdout, "%s ", argv[i]);
+              }
+              fprintf(stdout, "\n");
+              if(execv(tokens_get_token(tokens, 0), argv) < 0){
+                  fprintf(stderr, "cant not run program: %s \n", tokens_get_token(tokens, 0));
+                  exit(-1);
+              }
+
+              //wati for exit of program and continute
+          } else {
+              waitpid(pid, &status, 0);
+              fprintf(stdout, "program exited with: %d.\n", status);
+          }
+        }
+    }
+
+    fflush(stdout);
+    fflush(stderr);
 
     if (shell_is_interactive)
       /* Please only print shell prompts when standard input is not a tty */

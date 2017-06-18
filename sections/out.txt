@@ -1,0 +1,19 @@
+总用量 1521
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:26 .
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:26 ..
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:24 bin
+dr-xr-xr-x   1 HKUST+yliucs HKUST+Domain Users      0 六月  9 19:11 cygdrive
+-rwxr-xr-x   1 HKUST+yliucs Administrators         59 五月 20 20:11 Cygwin.bat
+-rw-r--r--   1 HKUST+yliucs Administrators     157097 五月 20 20:11 Cygwin.ico
+-rw-r--r--   1 HKUST+yliucs Administrators      53342 五月 20 20:11 Cygwin-Terminal.ico
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 20 20:11 dev
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:26 etc
+drwxrwxrwt+  1 HKUST+yliucs HKUST+Domain Users      0 五月 20 20:12 home
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:13 lib
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:08 opt
+dr-xr-xr-x  11 HKUST+yliucs HKUST+Domain Users      0 六月  9 19:11 proc
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 20 20:10 sbin
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:26 srv
+drwxrwxrwt+  1 HKUST+yliucs HKUST+Domain Users      0 六月  9 19:06 tmp
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 21 19:08 usr
+drwxr-xr-x+  1 HKUST+yliucs HKUST+Domain Users      0 五月 20 20:10 var

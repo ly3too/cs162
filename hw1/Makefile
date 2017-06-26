@@ -1,8 +1,8 @@
-SRCS=shell.c tokenizer.c
+SRCS=shell.c tokenizer.c get_full_path.c
 EXECUTABLES=shell
 
 CC=gcc
-CFLAGS=-g -Wall -std=gnu99
+CFLAGS=-g -Wall -std=gnu99 # -D DEBUG
 LDFLAGS=
 
 OBJS=$(SRCS:.c=.o)

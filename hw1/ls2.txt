@@ -1,0 +1,13 @@
+get_full_path.c
+get_full_path.h
+get_full_path.o
+ls.txt
+ls2.txt
+Makefile
+shell.c
+shell.exe
+shell.exe.stackdump
+shell.o
+tokenizer.c
+tokenizer.h
+tokenizer.o

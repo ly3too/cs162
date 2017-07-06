@@ -2,7 +2,7 @@ SRCS=shell.c tokenizer.c get_full_path.c jobs.c
 EXECUTABLES=shell
 
 CC=gcc
-CFLAGS=-g -Wall -std=gnu99  -D DEBUG #-D DEBUG_GET_JOB_VECTOR
+CFLAGS=-g -Wall -std=gnu99  #-D DEBUG #-D DEBUG_GET_JOB_VECTOR
 LDFLAGS=
 
 OBJS=$(SRCS:.c=.o)

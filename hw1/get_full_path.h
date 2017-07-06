@@ -14,3 +14,5 @@ void fpath_destory(char *fpath);
 char ** get_path_vector(const char *path);
 
 void destroy_path_vector(char ** vec);
+
+int get_cmd(char *const wd, char ** cmd);

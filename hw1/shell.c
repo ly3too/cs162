@@ -146,6 +146,7 @@ int main(unused int argc, unused char *argv[])
 
 						if(!job_run_background(job_p))
 						{
+							running_job_set_bg(this_job, false);
 							wait_for_job(&job_list);
 							DEBUG_PRINT(("debug: get job [%d] %s \n", job_list_get_index(&job_list, this_job), running_job_get_cmd(this_job)));
 						}
@@ -178,6 +179,7 @@ int main(unused int argc, unused char *argv[])
 
 		fflush(stdout);
 		fflush(stderr);
+		fflush(stdin);
 
 		if (shell_is_interactive) {
 			/* Please only print shell prompts when standard input is not a tty */
@@ -308,7 +310,8 @@ void clear_jobs()
 void sigterm_handle(int sig)
 {
 	clear_jobs();
-	SIG_DFL(SIGTERM);
+	//SIG_DFL(SIGTERM);
+	exit(0);
 }
 
 void running_job_init(running_job_t * job) {
@@ -745,6 +748,7 @@ int cmd_bg(struct tokens *tokens)
 		bg_job = job_list_get_recent(&job_list);
 		if(bg_job) {
 			kill(-running_job_get_gid(bg_job), SIGCONT);
+			wait_for_job(&job_list);
 			return EXIT_SUCCESS;
 		}
 		else {
@@ -762,6 +766,7 @@ int cmd_bg(struct tokens *tokens)
 	}
 	if(bg_job) {
 		kill(-running_job_get_gid(bg_job), SIGCONT);
+		wait_for_job(&job_list);
 		return EXIT_SUCCESS;
 	}
 	else {
@@ -777,10 +782,11 @@ int cmd_wait(struct tokens *tokens)
 	int status;
 	while(job_p) {
 		for(size_t n=0; n<job_p->pidc; n++) {
-			do {
+			status = job_p -> statusv[n];
+			while(!(WIFEXITED(status) || WIFSIGNALED(status) || WCOREDUMP(status) || WIFSTOPPED(status) || (rpid<=0)) ) {
 				rpid = waitpid(job_p->pidv[n], &status, WCONTINUED | WUNTRACED);
 				job_status_handle(&job_list, rpid, status);
-			} while(!(WIFEXITED(status) || WIFSIGNALED(status) || WCOREDUMP(status) || WIFSTOPPED(status) || (rpid<=0)) );
+			}
 		}
 		job_p = job_p -> next_job;
 	}
